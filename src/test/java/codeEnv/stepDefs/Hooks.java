@@ -19,7 +19,7 @@ public class Hooks {
     @Before()
     public void beforeScenario(Scenario scenario){
         global.getDriverManager().launchBrowser(Enums.Browser.Firefox);
-        //System.out.println("Scenario start::" +scenario.getName() );
+        //System.out.println("Scenario start::" +scenario.getName() ); 
     }
     @After()
     public void afterScenario(Scenario scenario){
