@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabdef45-da34-4489-a076-ab04abd56faf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,24 +51,6 @@
                 <element signature="e#3660#3661#0" expanded="true" />
                 <element signature="e#3694#3695#0" expanded="true" />
                 <element signature="e#3734#3735#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PomTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/pom/PomTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,16 +121,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            <state relative-caret-position="529">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#325#326#0" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -211,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -457,7 +449,7 @@
       <workItem from="1532582290426" duration="18354000" />
       <workItem from="1532609063478" duration="6117000" />
       <workItem from="1532772619311" duration="6000" />
-      <workItem from="1532772988356" duration="23317000" />
+      <workItem from="1532772988356" duration="23630000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1532614957958</created>
@@ -480,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532796224751</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit 7/28/2018">
+      <created>1532796627422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532796627422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -516,7 +515,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51004000" />
+    <option name="totallyTimeSpent" value="51317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -528,10 +527,10 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005208" side_tool="true" weight="0.3298279" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005208" side_tool="true" weight="0.39961758" />
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3298279" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49947917" weight="0.3298279" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
@@ -543,7 +542,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39961758" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49947917" weight="0.39961758" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -561,7 +560,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Commit 7/28/2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 7/28/2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -584,13 +584,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/3.0.2/cucumber-core-3.0.2-sources.jar!/cucumber/runner/TimeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/3.0.2/cucumber-core-3.0.2-sources.jar!/cucumber/runner/EventBus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -989,13 +982,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="529">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#325#326#0" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
