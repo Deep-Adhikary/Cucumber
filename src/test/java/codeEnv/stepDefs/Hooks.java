@@ -1,32 +1,45 @@
 package codeEnv.stepDefs;
 import codeEnv.global.Global;
+import codeEnv.utils.Enums;
 import cucumber.api.Scenario;
-import cucumber.api.TestStep;
 import cucumber.api.java.BeforeStep;
 import cucumber.api.java.AfterStep;
 import cucumber.api.java.Before;
 import cucumber.api.java.After;
-public class Hooks {
+import cucumber.runtime.ScenarioImpl;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
+public class Hooks {
+    Global global;
+    TakesScreenshot screenshot;
+    public Hooks(Global global){
+        this.global=global;
+    }
     @Before()
     public void beforeScenario(Scenario scenario){
-        Global.push("Scenario start::" +scenario.getName());
+        global.getDriverManager().launchBrowser(Enums.Browser.Firefox);
         //System.out.println("Scenario start::" +scenario.getName() );
     }
     @After()
     public void afterScenario(Scenario scenario){
-        Global.push("Scenario End::" +scenario.getName());
+
+        if(scenario.isFailed()){
+            screenshot=((TakesScreenshot)global.getDriverManager().getDriver());
+            byte[] screenShot=screenshot.getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenShot, "image/png");
+            System.out.println("Captured");
+        }
+        global.getDriverManager().getDriver().quit();
         //System.out.println("Scenario End::" +scenario.getName() );
     }
     @BeforeStep()
-    public void beforeStep(){
-        Global.push("Step Start");
-       // System.out.println("Step Start");
+    public void beforeStep(Scenario scenario){
+
     }
 
     @AfterStep()
-    public void afterStep(){
-        Global.push("Step End");
-       // System.out.println("Step End");
+    public void afterStep(Scenario scenario){
+
     }
 }

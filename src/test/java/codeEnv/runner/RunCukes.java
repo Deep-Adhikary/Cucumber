@@ -17,7 +17,7 @@ import java.io.File;
         features = "src/test/java/codeEnv/resource"
         ,glue={"codeEnv.stepDefs"},
         plugin = { "pretty", "json:target/Results/Cucumber.json",
-                "html:target/Results/native-cucumberreport",
+               // "html:target/Results/native-cucumberreport",
                "junit:target/Results/Cucumber.xml"
         },
         dryRun =false,
@@ -58,6 +58,6 @@ public class RunCukes {
         ReportBuilder reportBuilder = new ReportBuilder(jsonFiles, configuration);
         Reportable result = reportBuilder.generateReports();
 
-        
+
     }
 }

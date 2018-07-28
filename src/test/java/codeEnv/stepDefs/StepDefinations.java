@@ -1,47 +1,44 @@
 package codeEnv.stepDefs;
+import codeEnv.managers.DriverManager;
+import codeEnv.pom.LoginPage;
+import codeEnv.utils.Enums;
 import cucumber.api.java.en.*;
 import codeEnv.global.Global;
 import cucumber.api.PendingException;
+import  codeEnv.utils.Enums.*;
+import org.openqa.selenium.WebDriver;
+
 public class StepDefinations {
-    @Given("Steps needs to be perform before scenario")
-    public void steps_needs_to_be_perform_before_scenario() {
+    private Global global;
+    private WebDriver driver;
+    private LoginPage loginPage;
+    public StepDefinations(Global o_global){
+        this.global=o_global;
+        driver= global.getDriverManager().getDriver();
+    }
+    @Given("User is in Facebook Login Page")
+    public void user_is_in_Facebook_Login_Page() {
         // Write code here that turns the phrase above into concrete actions
-        Global.push("The Sky is crying");
-       // System.out.println("The Sky is crying");
+
+       driver.get("https://www.facebook.com/");
+        loginPage=new LoginPage(driver);
+
+    }
+    @When("User enter username as {string} and password for User")
+    public void user_enter_username_as_and_password_for_User(String userName) {
+        // Write code here that turns the phrase above into concrete actions
+        loginPage.enterCredential(userName,"C3inadtgs@62");
     }
 
-    @Given("It is raining and user is outside")
-    public void it_is_raining_and_user_is_outside() {
+    @When("Click on Login Button")
+    public void click_on_Login_Button() {
         // Write code here that turns the phrase above into concrete actions
-        Global.push("Yeah It is Raining");
-        //System.out.println("Yeah It is Raining");
+        loginPage.clickLoginBtn();
     }
 
-    @When("User un tie Knot")
-    public void user_un_tie_nought() {
+    @Then("Login should be successful")
+    public void login_should_be_successful() {
         // Write code here that turns the phrase above into concrete actions
-        Global.push("Umbrella Knot Untied");
-       // System.out.println("Umbrella Knot Untied");
-    }
-
-    @When("Press on open Switch")
-    public void press_on_open_Switch() {
-        // Write code here that turns the phrase above into concrete actions
-        Global.push("Switch pressed successfully");
-        //System.out.println("Switch pressed successfully");
-    }
-
-    @Then("Umbrella should open")
-    public void umbrella_should_open() {
-        // Write code here that turns the phrase above into concrete actions
-        Global.push("Wow!! Umbrella opened");
-        //System.out.println("Wow!! Umbrella opened");
-    }
-
-    @Then("The clothes of umbrella should not be torn")
-    public static void the_clothes_of_umbrella_should_not_be_torn() {
-        // Write code here that turns the phrase above into concrete actions
-        Global.push("Thank God! It is not torn.");
-       // System.out.println("Thank God! It is not torn.");
+       loginPage.verifyLogin();
     }
 }

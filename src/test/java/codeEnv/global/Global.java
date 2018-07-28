@@ -1,14 +1,15 @@
 package codeEnv.global;
 
+import codeEnv.managers.DriverManager;
+
 import java.util.Stack;
 
 public class Global {
-    private static Stack<String> logger=new Stack<String>();
-    public static void  push(String details){
-        logger.push(details);
+    private DriverManager driverManager;
+    public Global(){
+        driverManager=new DriverManager();
     }
-    public static void show(){
-        System.out.println(logger);
-       // logger.forEach(step->System.out.println(step));
+    public DriverManager getDriverManager() {
+        return driverManager;
     }
 }
