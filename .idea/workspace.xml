@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabdef45-da34-4489-a076-ab04abd56faf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/resource/Another.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/resource/Another.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/resource/NewFeture.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -146,9 +142,10 @@
       <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="171">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#325#326#0" expanded="true" />
                 <element signature="e#348#349#0" expanded="true" />
               </folding>
@@ -193,6 +190,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -329,28 +329,6 @@
               <item name="codeEnv" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.seleniumhq.selenium:selenium-api:3.13.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.seleniumhq.selenium:selenium-api:3.13.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-api-3.13.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.seleniumhq.selenium:selenium-api:3.13.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-api-3.13.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -365,7 +343,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -479,7 +457,7 @@
       <workItem from="1532582290426" duration="18354000" />
       <workItem from="1532609063478" duration="6117000" />
       <workItem from="1532772619311" duration="6000" />
-      <workItem from="1532772988356" duration="22269000" />
+      <workItem from="1532772988356" duration="23317000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1532614957958</created>
@@ -495,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1532615060536</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test">
+      <created>1532796224751</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532796224751</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -531,7 +516,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49956000" />
+    <option name="totallyTimeSpent" value="51004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -551,14 +536,14 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19010417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19010417" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.39961758" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39961758" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1004,9 +989,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="171">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#325#326#0" expanded="true" />
             <element signature="e#348#349#0" expanded="true" />
           </folding>
