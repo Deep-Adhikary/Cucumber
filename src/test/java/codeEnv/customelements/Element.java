@@ -1,14 +1,14 @@
-package codeEnv.pom;
-
-import cucumber.api.java.es.E;
+package codeEnv.customelements;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.ArrayList;
+import org.apache.log4j.Logger;
 
 public class Element {
+    private static final  Logger logger=Logger.getLogger(Element.class);
     private WebElement element;
     private WebDriver driver;
     private WebDriverWait wait;
@@ -22,17 +22,14 @@ public class Element {
         NOTPESENT,
         INVALID
     }
-
     public Element(WebElement elem, WebDriver driver) {
         this.element = elem;
         this.driver = driver;
         wait = new WebDriverWait(driver, 10);
     }
-
     public <X> X getScreenshotAs(OutputType<X> target) throws WebDriverException {
         return element.getScreenshotAs(target);
     }
-
     public void click() {
         if (isDisplayed() ) {
             if(isEnabled()){
@@ -40,13 +37,13 @@ public class Element {
                 if (element != null) {
                     element.click();
                 } else {
-                    System.out.println("Element is not clickable");
+                    logger.info("Element is not clickable");
                 }
             }else{
-                System.out.println("Element is not enabled");
+                logger.info("Element is not enabled");
             }
         } else {
-            System.out.println("Element is not displayed");
+            logger.info("Element is not displayed");
         }
     }
 
@@ -60,10 +57,10 @@ public class Element {
             if (isEnabled()) {
                 element.sendKeys(keysToSend);
             } else {
-                System.out.println("Element is not enabled displayed");
+                logger.info("Element is not enabled displayed");
             }
         } else {
-            System.out.println("Element is not displayed");
+            logger.info("Element is not displayed");
         }
     }
 
@@ -72,10 +69,10 @@ public class Element {
             if(isEnabled()){
                 element.clear();
             }else{
-                System.out.println("Element is not Enabled");
+                logger.info("Element is not Enabled");
             }
         }else{
-            System.out.println("Element is not Displayed");
+            logger.info("Element is not Displayed");
         }
     }
 
@@ -83,25 +80,26 @@ public class Element {
         if(isPresent())
             return element.getTagName();
         else {
-            System.out.println("Element is not enabled not Present");
+            logger.info("Element is not enabled not Present");
             return "";
         }
     }
 
     public String getText() {
-        if(isPresent())
+        if(isPresent()) {
             return element.getText();
-        else {
-            System.out.println("Element is not enabled not Present");
+        }else {
+            logger.info("Element is not enabled not Present");
             return "";
         }
     }
 
     public String getAttribute(String name) {
-        if(isPresent())
+        if(isPresent()) {
+            logger.info("Element is Present");
             return element.getAttribute(name);
-        else {
-            System.out.println("Element is not enabled not Present");
+        }else {
+            logger.info("Element is not enabled not Present");
             return "";
         }
     }
@@ -150,7 +148,7 @@ public class Element {
         if(isPresent())
             return element.getCssValue(propertyName);
         else {
-            System.out.println("Element is not enabled not Present");
+            logger.info("Element is not enabled not Present");
             return "";
         }
     }

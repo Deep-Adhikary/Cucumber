@@ -1,5 +1,6 @@
 package codeEnv.pom;
 
+import codeEnv.customelements.Element;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,7 @@ public class PomTemplate {
         this.driver=driver;
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, timeOut), this);
     }
-    protected  Element $(WebElement ele){
+    protected Element $(WebElement ele){
         return new Element(ele,driver);
     }
     protected Element $(By by){
