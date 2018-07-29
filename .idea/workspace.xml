@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dabdef45-da34-4489-a076-ab04abd56faf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/codeEnv/managers/PageManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/resource/Another.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/features/Another.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Results/Cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/Cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Results/Cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/Cucumber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-failures.html" afterDir="false" />
@@ -18,11 +20,6 @@
       <change beforePath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-steps.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/cucumber-html-reports/overview-tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Results/cucumber-html-reports/report-feature_src-test-java-codeEnv-resource-Another-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Results/cucumber-html-reports/report-feature_src-test-java-codeEnv-resource-Another-feature.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-codeEnv.runner.RunCukes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/codeEnv.runner.RunCukes.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,7 +40,7 @@
       <file leaf-file-name="Element.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/pom/Element.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="575">
               <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,8 +52,8 @@
       <file leaf-file-name="DriverManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+            <state relative-caret-position="391">
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +73,8 @@
       <file leaf-file-name="RunCukes.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1104">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="819">
+              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +82,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepDefinations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java">
+      <file leaf-file-name="PageManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/managers/PageManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StepDefinations.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,8 +111,8 @@
       <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="382">
+              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +123,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="907">
-              <caret line="119" selection-start-line="119" selection-end-line="119" />
+            <state relative-caret-position="-151">
+              <caret line="103" column="54" lean-forward="true" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -122,20 +133,20 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+              <caret line="15" column="89" lean-forward="true" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Global.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Global.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
               <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,16 +182,17 @@
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/utils/Enums.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/resource/Another.feature" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/pom/PomTemplate.java" />
-        <option value="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/pom/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/pom/Element.java" />
-        <option value="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java" />
+        <option value="$PROJECT_DIR$/src/test/java/codeEnv/managers/PageManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/codeEnv/global/Global.java" />
+        <option value="$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java" />
       </list>
     </option>
   </component>
@@ -209,9 +221,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,17 +244,39 @@
               <item name="Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeEnv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codeEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="managers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cucumber" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cucumber" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,6 +403,7 @@
       <workItem from="1532772619311" duration="6000" />
       <workItem from="1532772988356" duration="23918000" />
       <workItem from="1532797383273" duration="1175000" />
+      <workItem from="1532847956133" duration="4220000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1532614957958</created>
@@ -401,16 +433,17 @@
       <option name="project" value="LOCAL" />
       <updated>1532796627422</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit 7/29/2018">
+      <created>1532848083773</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532848083773</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RunCukes - 2018.07.28 at 21h 42m 35s.xml">
-      <configuration name="RunCukes" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RunCukes - 2018.07.28 at 21h 46m 00s.xml">
-      <configuration name="RunCukes" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RunCukes - 2018.07.28 at 21h 47m 43s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
@@ -435,12 +468,19 @@
     <history-entry file="RunCukes - 2018.07.28 at 22h 50m 54s.xml">
       <configuration name="RunCukes" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RunCukes - 2018.07.29 at 12h 42m 32s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RunCukes - 2018.07.29 at 13h 44m 18s.xml">
+      <configuration name="RunCukes" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52780000" />
+    <option name="totallyTimeSpent" value="57000000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -452,12 +492,13 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3298279" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49947917" weight="0.3298279" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49947917" visible="true" weight="0.3298279" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19010417" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19010417" />
       <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3298279" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -470,7 +511,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,11 +522,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
     <MESSAGE value="Commit 7/28/2018" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 7/28/2018" />
+    <MESSAGE value="Commit 7/29/2018" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 7/29/2018" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -505,13 +546,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/3.0.2/cucumber-core-3.0.2-sources.jar!/cucumber/api/event/TestStepStarted.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/3.0.2/cucumber-core-3.0.2-sources.jar!/cucumber/runtime/Timeout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -763,7 +797,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/resource/Another.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/features/Another.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
@@ -772,7 +806,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/pom/Element.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="575">
           <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -787,57 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="907">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,10 +835,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-151">
+          <caret line="103" column="54" lean-forward="true" selection-start-line="103" selection-start-column="54" selection-end-line="103" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="87" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
+          <caret line="15" column="89" lean-forward="true" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/managers/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/runner/RunCukes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/managers/PageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -861,8 +897,18 @@
           <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/codeEnv/stepDefs/StepDefinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

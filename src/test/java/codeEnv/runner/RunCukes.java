@@ -14,7 +14,7 @@ import java.io.File;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/java/codeEnv/resource"
+        features = "src/test/java/codeEnv/features"
         ,glue={"codeEnv.stepDefs"},
         plugin = { "pretty", "json:target/Results/Cucumber.json",
                // "html:target/Results/native-cucumberreport",

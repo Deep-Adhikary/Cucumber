@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -18,11 +19,10 @@ public class DriverManager {
             case Firefox:
                 System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") +"\\src\\test\\java\\exes\\geckodriver.exe");
                 FirefoxProfile ffprofile = new FirefoxProfile();
+                FirefoxOptions firefoxOptions=new FirefoxOptions();
                 ffprofile.setPreference("dom.webnotifications.enabled", false);
-                DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-                capabilities.setCapability(FirefoxDriver.PROFILE, ffprofile);
-
-                driver=new FirefoxDriver(capabilities);
+                firefoxOptions.setProfile(ffprofile);
+                driver=new FirefoxDriver(firefoxOptions);
                  break;
             case IE:
                 System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") +"\\src\\test\\java\\exes\\IEDriverServer.exe");

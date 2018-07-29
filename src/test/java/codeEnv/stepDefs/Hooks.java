@@ -38,13 +38,9 @@ public class Hooks {
     }
     @BeforeStep()
     public void beforeStep(Scenario scenario){
-
-
-
     }
 
     @AfterStep()
     public void afterStep(Scenario scenario){
-
     }
 }
