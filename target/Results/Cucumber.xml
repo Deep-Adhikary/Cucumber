@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.425024">
+    <testcase classname="Login To Facebook" name="User can login with proper credential" time="35.425024">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at codeEnv.pom.LoginPage.verifyLogin(LoginPage.java:36)&#13;&#10;&#9;at codeEnv.stepDefs.StepDefinations.login_should_be_successful(StepDefinations.java:42)&#13;&#10;&#9;at ✽.Login should be successful(src/test/java/codeEnv/resource/Another.feature:7)&#13;&#10;">
+            <![CDATA[Given User is in Facebook Login Page........................................passed
+When User enter username as "adhikary33@gmail.com" and password for User....passed
+And Click on Login Button...................................................passed
+Then Login should be successful.............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at codeEnv.pom.LoginPage.verifyLogin(LoginPage.java:36)
+	at codeEnv.stepDefs.StepDefinations.login_should_be_successful(StepDefinations.java:42)
+	at ✽.Login should be successful(src/test/java/codeEnv/resource/Another.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

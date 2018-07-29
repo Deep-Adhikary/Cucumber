@@ -21,6 +21,7 @@ public class DriverManager {
                 ffprofile.setPreference("dom.webnotifications.enabled", false);
                 DesiredCapabilities capabilities=DesiredCapabilities.firefox();
                 capabilities.setCapability(FirefoxDriver.PROFILE, ffprofile);
+
                 driver=new FirefoxDriver(capabilities);
                  break;
             case IE:

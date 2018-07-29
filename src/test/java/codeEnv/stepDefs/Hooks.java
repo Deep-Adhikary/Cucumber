@@ -9,6 +9,8 @@ import cucumber.api.java.After;
 import cucumber.runtime.ScenarioImpl;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.apache.log4j.Logger;
+
 
 public class Hooks {
     Global global;
@@ -36,6 +38,8 @@ public class Hooks {
     }
     @BeforeStep()
     public void beforeStep(Scenario scenario){
+
+
 
     }
 
